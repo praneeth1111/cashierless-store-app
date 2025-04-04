@@ -32,3 +32,26 @@ Product catalog displayed to users with category tags.
 
 ---
 
+---
+
+## 🧠 AIRecommendations
+
+Stores product category recommendations generated via Azure ML.
+
+| Column Name | Data Type | Description                     |
+|-------------|-----------|---------------------------------|
+| UserEmail   | Text      | Email of the current user       |
+| Categories  | Choice[]  | Suggested categories to display |
+
+---
+
+## 🛒 Cart (Local Collection)
+
+Used to temporarily store selected products before checkout.
+
+| Column Name | Data Type | Description                     |
+|-------------|-----------|---------------------------------|
+| ProductName | Text      | Name of product added to cart   |
+| Price       | Currency  | Product price                   |
+| Quantity    | Number    | Quantity selected by user       |
+
